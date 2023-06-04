@@ -1,6 +1,6 @@
-package com.calmcapybara.springactionrestclient.repository;
+package com.calmcapybara.springactionclient.repository;
 
-import com.calmcapybara.springactionrestclient.entity.TacoOrder;
+import com.calmcapybara.springactionclient.entity.TacoOrder;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 

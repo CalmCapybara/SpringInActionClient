@@ -1,6 +1,6 @@
-package com.calmcapybara.springactionrestclient.controller;
+package com.calmcapybara.springactionclient.controller;
 
-import com.calmcapybara.springactionrestclient.entity.TacoOrder;
+import com.calmcapybara.springactionclient.entity.TacoOrder;
 import org.springframework.http.*;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -20,11 +20,10 @@ public class OrderController {
         HttpHeaders headers = new HttpHeaders();
         headers.setContentType(MediaType.APPLICATION_JSON);
         HttpEntity<TacoOrder> entity = new HttpEntity<>(order, headers);
-        ResponseEntity<TacoOrder> response = restTemplate.exchange(
+        return restTemplate.exchange(
                 "http://localhost:8080/api/orders",
                 HttpMethod.POST,
                 entity,
                 TacoOrder.class);
-        return response;
     }
 }

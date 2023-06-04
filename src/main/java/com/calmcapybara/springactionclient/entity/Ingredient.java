@@ -1,4 +1,4 @@
-package com.calmcapybara.springactionrestclient.entity;
+package com.calmcapybara.springactionclient.entity;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;

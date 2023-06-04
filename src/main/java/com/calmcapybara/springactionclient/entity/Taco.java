@@ -1,5 +1,6 @@
-package com.calmcapybara.springactionrestclient.entity;
+package com.calmcapybara.springactionclient.entity;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -22,7 +23,7 @@ public class Taco implements Serializable {
     private Long id;
     private String name;
 
-    @ManyToMany(cascade = CascadeType.MERGE)
+    @ManyToMany(cascade = CascadeType.MERGE, fetch = FetchType.EAGER)
     @JoinTable(name = "ingredient_taco",
             joinColumns = @JoinColumn(name = "taco_id"),
             inverseJoinColumns = @JoinColumn(name = "ingredient_id")
@@ -30,5 +31,6 @@ public class Taco implements Serializable {
     private List<Ingredient> ingredientList = new ArrayList<>();
 
     @ManyToOne
+    @JsonBackReference
     private TacoOrder tacoOrder;
 }

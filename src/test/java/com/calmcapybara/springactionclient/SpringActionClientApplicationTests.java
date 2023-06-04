@@ -1,10 +1,10 @@
-package com.calmcapybara.springactionrestclient;
+package com.calmcapybara.springactionclient;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class SpringActionRestClientApplicationTests {
+class SpringActionClientApplicationTests {
 
     @Test
     void contextLoads() {

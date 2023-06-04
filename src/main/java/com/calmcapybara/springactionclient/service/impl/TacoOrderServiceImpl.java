@@ -1,8 +1,8 @@
-package com.calmcapybara.springactionrestclient.service.impl;
+package com.calmcapybara.springactionclient.service.impl;
 
-import com.calmcapybara.springactionrestclient.entity.TacoOrder;
-import com.calmcapybara.springactionrestclient.repository.TacoOrderRepository;
-import com.calmcapybara.springactionrestclient.service.TacoOrderService;
+import com.calmcapybara.springactionclient.entity.TacoOrder;
+import com.calmcapybara.springactionclient.repository.TacoOrderRepository;
+import com.calmcapybara.springactionclient.service.TacoOrderService;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 

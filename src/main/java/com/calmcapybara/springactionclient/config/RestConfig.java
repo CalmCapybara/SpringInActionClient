@@ -1,4 +1,4 @@
-package com.calmcapybara.springactionrestclient.config;
+package com.calmcapybara.springactionclient.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

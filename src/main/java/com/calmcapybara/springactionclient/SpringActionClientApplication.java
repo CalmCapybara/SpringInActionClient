@@ -1,4 +1,4 @@
-package com.calmcapybara.springactionrestclient;
+package com.calmcapybara.springactionclient;
 
 import com.ulisesbocchio.jasyptspringboot.annotation.EnableEncryptableProperties;
 import org.springframework.boot.SpringApplication;
@@ -6,10 +6,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
 @EnableEncryptableProperties
-public class SpringActionRestClientApplication {
+public class SpringActionClientApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(SpringActionRestClientApplication.class, args);
+        SpringApplication.run(SpringActionClientApplication.class, args);
     }
 
 }
